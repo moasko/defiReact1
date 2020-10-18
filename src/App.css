@@ -1,0 +1,158 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --pink: #f28e9a;
+    --bgColor: #f4f5f8;
+}
+
+html,
+body {}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/****bar de navigation ****/
+
+nav {
+    position: relative;
+    background-color: var(--pink);
+    padding: 2rem;
+    width: 35%;
+}
+
+
+/***********main**************/
+
+.right {
+    overflow: scroll;
+    display: flex;
+    background-color: var(--bgColor);
+    justify-content: center;
+}
+
+.usersBoxContent {
+    height: 100%;
+    width: 90%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usersBox {
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.075);
+    background-color: #fff;
+    padding: 1.5rem;
+    width: 27%;
+    min-height: 250px;
+    align-items: center;
+    margin: 27px;
+    height: 312px;
+}
+
+header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.navigation {
+    margin-top: 60px;
+}
+
+.navigation a {
+    transition: .5s;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.534);
+}
+
+.navigation a:hover {
+    transition: .5s;
+    color: rgb(255, 255, 255);
+}
+
+.prim {
+    color: var(--pink);
+}
+
+.userName {
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--pink);
+}
+
+.usersRole {
+    margin-top: 6px;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: rgb(148, 148, 148);
+}
+
+.usersDescript {
+    color: rgb(71, 71, 71);
+    font-size: 16px;
+    margin-top: 25px;
+    text-transform: capitalize;
+}
+
+.profilePhoto {
+    margin-bottom: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+
+.profilePhoto img {
+    width: 100%;
+    height: 100%;
+}
+
+.userBox {
+    color: #fff;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rol {
+    letter-spacing: 4px;
+}
+
+.userInfos {
+    width: 53%;
+}
+
+.name {
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 20px;
+}
+
+.photo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
